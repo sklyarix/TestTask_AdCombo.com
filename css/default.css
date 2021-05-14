@@ -1,14 +1,16 @@
 *{
   box-sizing: border-box;
 }
-body,h1,h2,h3,h4,h5,h6,p,ul,li{
+body{
+  margin: 0;
+  background-color:#FFFFFF;
+  padding: 0 16px;
+}
+h1,h2,h3,h4,h5,h6,p,ul,li{
   margin: 0;
   padding: 0;
 }
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-.body{
-  background-color:#FFFFFF;
-}
 .text{
   font-family: "Roboto";
   font-style: normal;
@@ -30,13 +32,14 @@ body,h1,h2,h3,h4,h5,h6,p,ul,li{
 color: #2E3A59;
 }
 header{
+  margin-top: 12px;
   margin-bottom: 64px;
-}
-.container{
-  margin: 0 16px;
+  
 }
 #Logo{
-  padding: 11px 41px 0 31px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .imgMain{
@@ -53,7 +56,6 @@ header{
 }
 .slide{
   display: block;
-  background-color: royalblue;
   margin: 0 57px;
 }
 .imgSlide{
@@ -67,46 +69,42 @@ header{
   opacity: 1;
   color:#A6ABBD;
 }
-.slick-dots{
-  background-color: seagreen;
-}
-.slick-track{
-  margin-bottom: 63px;
-}
 .slick-dots li button:before{
   font-size: 8px;
   opacity: 1;
   color: #E7EBF0;
 }
-.slick-prev:before{
-  color: #191010;
-}
-.slick-next:before{
-  color: #191010
-}
+
 .slider-controls{
   display:block;
   position: relative;
-  height: 11px;
+  height: 19px;
+  width: 162px;
+  margin: 0 auto;
 }
 .slide-m-dots{
   display: inline-block;
-  vertical-align: middle
+  margin-left: 21px;
+  margin-right: 10px;
+
 }
 .slide-m-next{
   display: inline-block;
   position: absolute;
   bottom: -50%;
-  width: 19px;
-  height: 11px;
-  background-color: brown;
 }
 .slide-m-prev{
   display: inline-block;
   position: absolute;
-  bottom: -50%;
-  width: 19px;
-  height: 11px;
-  background-color: aqua;
-  
+  bottom:-50%;
+}
+#firstMain{
+  margin-bottom: 103px;
+}
+.greenLine{
+  display: block;
+  margin: 0 auto 16px auto;
+  width: 184px;
+  height: 4px;
+  background-color:  #00C368;
 }
