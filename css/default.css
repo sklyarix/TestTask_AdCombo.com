@@ -49,7 +49,7 @@ header{
   margin-bottom: 50px;
 }
 .slider{
-
+  position: relative;
 }
 .slide{
   display: block;
@@ -67,6 +67,9 @@ header{
   opacity: 1;
   color:#A6ABBD;
 }
+.slick-dots{
+  background-color: seagreen;
+}
 .slick-track{
   margin-bottom: 63px;
 }
@@ -74,4 +77,17 @@ header{
   font-size: 8px;
   opacity: 1;
   color: #E7EBF0;
+}
+.slick-prev:before{
+  color: #191010;
+  top: 100%;
+  margin-top: -9.5px;
+  bottom: 0;
+}
+.slick-next:before{
+  color: #191010
+}
+.next{
+  position: relative;
+  bottom:20px;
 }
