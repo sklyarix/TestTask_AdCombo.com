@@ -13,9 +13,7 @@ body,h1,h2,h3,h4,h5,h6,p,ul,li{
 .container{
   padding: 0 16px;
 }
-.none{
-  display: none;
-}
+
 .top{
   position: relative;
 }
@@ -172,6 +170,7 @@ nav{
   margin-top: 35px;
   margin-bottom: 50px;
 }
+/*Первая версия главной страницы*/ 
 @media (min-width: 1023px){
   .imgMain{
   position: absolute;
@@ -197,7 +196,7 @@ nav{
   position: relative;
   left: calc(50% - 92px);
 }
-}
+}/*конец*/
 
 .slider{
   position: relative;
@@ -207,25 +206,37 @@ nav{
   display: block;
   margin: 0 57px;
 }
+/* Первая версия главной страницы */
 @media (min-width: 1023px){
   .slider{
+    position: relative;
     width: 90%;
     left: 5%;
   }
   .slide{
-    display: inline-block;
-    width: 176px;
+    display: block;
+    width: 178px;
     height: auto;
 }
+
 .slide1,.slide2{
+  display: inline-block;
   position: relative;
   margin-bottom: 129px;
 }
 .slide3,.slide4{
-  position: relative;
   margin-bottom: 61px;
 }
+.slide5,.slide6{
+  display: inline-block;
+  margin-bottom: 93px;
 }
+.slide4{
+  position: absolute;
+  right: 0;
+  top: calc(50% - 115px);
+}
+}/*конец*/
 .imgSlide{
   
   width: 64px;
@@ -244,12 +255,16 @@ nav{
 }
 
 .slider-controls{
-  display:block;
+  display: none;
   position: relative;
   height: 19px;
   width: 162px;
   margin: 0 auto;
 }
+@media(max-width:1023px){
+  .slider-controls{
+    display: block;
+  }}
 .slide-m-dots{
   display: inline-block;
   margin-left: 21px;
@@ -266,25 +281,30 @@ nav{
   position: absolute;
   bottom:-50%;
 }
-#firstMain{
+.firstMain{
   margin-bottom: 63px;
   position: relative;
 }
 
-@media(min-width: 1023px) {
-  #firstMain{
+@media(min-width:1023){
+  .firstMain{
     padding-top: 75px;
-    background: linear-gradient(to left, #FFFFFF, #E2E2E2);
+    background-color: linear-gradient(to left, #FFFFFF, #E2E2E2);
     position: relative;
   }
-  
 }
-.secondMain{
+
+.secondMainBlock{
   background: #F8FBFF;
   padding-top: 40px;
   padding-bottom: 9px;
-  margin-bottom: 56px;
+  margin-bottom: 47px;
 }
+@media(min-width:1023px){
+  .secondMainBlock{
+    padding-top: 105px;
+    margin-bottom: 0;
+  }}
 .greenLine::before{
   content: '';
   width: 184px;
@@ -322,6 +342,41 @@ nav{
   display: block;
   cursor: pointer;
 }
+.dropImg{
+  display: none;
+}
+@media(min-width: 767px) {
+  .dropTitle::before{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 24px;
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: #E7EBF0;
+    border-radius: 40px;
+  }
+  .dropImg{
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 0;
+  }
+}
+@media(min-width: 1023px) {
+  .secondMain{
+    width: 704px;
+    position: relative;
+    left: calc(50% - 352px);
+  }
+  .secondMain h2{
+    width: 640px;
+    position: relative;
+    left: calc(50% - 320px);
+  }
+}
 .dropTitle::after{
   content: '';
   width: 19px;
@@ -335,7 +390,13 @@ nav{
   margin-right: 5px;
   margin-top: 5px;
   top: 0;
-  right: -5%;
+  right: 0;
+}
+@media (max-width:400px) {
+  .dropTitle{
+    width: 269px;
+  }
+  
 }
 .dropTitle--active{
   color:  #00C368;
@@ -389,8 +450,12 @@ nav{
   margin-top: 19px;
 }
 .imgAuthor{
+  width: 59px;
+  height: 59px; 
   margin-top: 3px;
   filter: drop-shadow(0px 8px 15px rgba(0, 0, 0, 0.5));
+  position: absolute;
+  top: 0;
 }
 
 .reviewFirst{
@@ -404,10 +469,6 @@ nav{
   
   text-align: left;
   margin-left: 74px;
-}
-.reviewFirstImg{
-  position: absolute;
-  top: 0;
 }
 .reviewSecond{
   position: relative;
@@ -428,3 +489,161 @@ nav{
   line-height: 150%; 
 }
 
+.none{
+  display: none;
+}
+.imgQuote{
+  display: none;
+}
+
+@media(min-width: 1023px) {
+  .imgQuote{
+    display:inline-block;
+    width: 187px;
+    height: 187px;
+  }
+  .imgAuthor{
+    width: 97px;
+    height: 97px;
+    right: -25%;
+  }
+  .quoteBlock{
+    margin-left: 12%;
+    margin-bottom:134px;
+    box-shadow:none;
+    background-color: #F5F5F5;
+  }
+  .quoteText {
+    display: inline-block;
+    position: relative;
+    margin-left: 71px;
+    padding: 0;
+    width: 489px;
+  }
+  .quoteText::before{
+    content: '';
+    position: absolute;
+    background-image: url(../img/quoteGreen.svg);
+    transform: rotate(180deg);
+    width: 40px;
+    height: 26px;
+    top: 0;
+    left: -10%;
+  }
+  .quoteText::after{
+    content: '';
+    position: absolute;
+    background-image: url(../img/quoteGreen.svg);
+    transform: rotate(0deg);
+    width: 40px;
+    height: 26px;
+    bottom: 0;
+    right: 0;
+  }
+
+  .quoteBlock p{
+    text-align: left;
+  }
+  .quoteBlock::before {
+    display: none;
+  }
+  .quoteBlock::after{
+    top: auto;
+    bottom: 0;
+    transform: rotate(0deg);
+    background-image: none;
+  }
+  .third{
+    padding-top: 114px;
+    background-color: #F5F5F5;
+  }
+  .reviewTextFirst{
+    width: 242px;
+  }
+  .reviewTextFirst p, .reviewTextSecond p{
+    line-height: 150%
+  }
+  .reviewFirst{
+    display: inline-block;
+    width: 335px;
+    position: relative;
+  }
+  .reviewSecond{
+    display: inline-block;
+    width: 362px;
+  }
+  .reviewSecondImg{
+    width: 97px;
+    height: 97px;
+  }
+  .reviewSecondImg {
+  left: 108px;
+  }
+  .reviewTextSecond{
+    position: relative;
+    left: 228px;
+  }
+  .review{
+    margin-left:12%;
+  }
+}
+@media(min-width: 1919px) {
+
+.third{
+  display: inline-block;
+  width: 50%;
+  height: 50%;
+}
+.secondMainBlock{
+  display: inline-block;
+  right: 0;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+}
+.twoBlocks{
+  display: block;
+}
+.reviewTextFirst{
+  margin-left: 0;
+}
+.imgAuthor{
+  position: absolute;
+  right: 0;
+}
+.reviewTextSecond{
+  left: 120px;
+}
+.reviewSecondImg{
+  left: 0;
+}
+.secondMainBlock{
+  padding-bottom:201px;
+}
+}
+/* вторая
+@media(min-width: 1023px) {
+.firstMainMax{
+  padding-top: 75px;
+    background: linear-gradient(to left, #FFFFFF, #E2E2E2);
+    position: relative;
+}
+.titleMax::before{
+  content: '';
+  width: 184px;
+  height: 4px;
+  display: block;
+  background: #00C368;;
+  margin-bottom: 16px;
+  position: relative;
+  left: calc(50% - 92px);
+  margin-bottom: 22px;
+}
+.titleMax{
+  margin-bottom: 69px;
+}
+.slide{
+
+}
+}
+*/

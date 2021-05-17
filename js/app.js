@@ -11,7 +11,7 @@ $(function() {
 })
 
 
-
+const sliderControls = document.querySelectorAll('slider-controls')
 const dropText = document.querySelectorAll('.dropText');
 const dropItem = document.querySelectorAll('.dropItem');
 const dropTitle = document.querySelectorAll('.dropTitle');
@@ -38,5 +38,3 @@ dropItem.forEach(function(drop){
     }
   })
 })
-
-
