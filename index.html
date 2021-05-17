@@ -15,41 +15,60 @@
 </head> 
 <body>
     <header>
+        <div class="container">
+        <div class="top">
             <img id="Logo" src="img/LogoSmall.svg" alt="Логотип">
-            <div>
-                
-            </div>
+            <nav>
+                <ul>
+                    <li>
+                        NavItem1 
+                    </li>
+                    <li>
+                        NavItem2 
+                    </li>
+                    <li>
+                        <button class="btn" >NavItem3</button> 
+                    </li>
+                </ul>
+            </nav>
+            <button class="btn btnRight">Button</button>
+        </div>    
+        </div>
     </header>
     <div id="firstMain">
-            <picture >
+        <div class="container">
+            
+            <picture>
+                <source type="image/webp" srcset="img/MainBig.webp" media="(min-width:1023px)">
+                <source type="image/webp" srcset="img/MainBig.png" media="(min-width:1023px)">
                 <source type="image/webp" srcset="img/MainSmall.webp">
                 <img  class="imgMain" src="img/MainSmall.png" alt="Главная картинка">
             </picture>
-            <h1 class="title heading">Lorem ipsum, dolor sit amet consectetur</h1>
+            <h1 class="title heading">Lorem ipsum, dolor sit amet consectetur </h1>
             <div class="slider">
-                <div class="slide">
+                <div class="slide  slide1">
                     <img class="imgSlide" src="img/1.svg" alt="Изображение-1">
-                    <p class="text textSlide">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="textStatic textSlide">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="slide">
+                <div class="slide slide2">
                     <img class="imgSlide" src="img/2.svg" alt="Изображение-2">
-                    <p class="text textSlide">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="textStatic textSlide">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="slide">
+                <div class="slide slide3">
                     <img class="imgSlide" src="img/3.svg" alt="Изображение-3">
-                    <p class="text textSlide">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="textStatic textSlide">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="slide">
+                <div class="slide slide4">
                     <img class="imgSlide" src="img/4.svg" alt="Изображение-4">
-                    <p class="text textSlide">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="textStatic textSlide">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="slide">
+                <div class="slide slide5">
                     <img class="imgSlide" src="img/5.svg" alt="Изображение-5">
-                    <p class="text textSlide">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="textStatic textSlide">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="slide">
+                <div class="slide slide6">
                     <img class="imgSlide" src="img/6.svg" alt="Изображение-6">
-                    <p class="text textSlide">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="textStatic textSlide">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
             <div class="slider-controls">
@@ -57,12 +76,95 @@
                 <div class="slide-m-dots"></div>
                 <button type="button" class="slide-m-next slick-next"><img src="img/ArrowNext.svg"></button>  
             </div>
+        </div>    
     </div>
-
-    <div id="secondMain">
-        <span class="greenLine"></span>
-        <div class="textSecondMain">
-            <h2 class="title heading">Lorem ipsum, dolor sit amet consectetur  elit.</h2>
+    
+    <div class="secondMain">
+        <div class="container">
+            <div class="secondMainBlockTitle">
+                <h2 class="heading greenLine">Lorem ipsum, dolor sit amet consectetur elit. </h2>
+                <p class="text">Porro ab rerum omnis magnam eligendi error nobis dolore?</p>
+            </div>
+            <div class="dropList">
+                <div class="dropItem dropItemLine">
+                    <div class="dropTitle textBold">
+                        Lorem ipsum, dolor sit amet  adipisicing elit.
+                    </div>
+                    <div class="dropText none">
+                        <p class="textStatic">Laboriosam quas, aut consectetur animi autem aliquid consequuntur suscipit exercitationem laborum cupiditate magnam eaque quae delenit</p>
+                    </div>
+                </div>
+                <div class="dropItem dropItemLine">
+                    <div class="dropTitle textBold">
+                        Lorem ipsum, dolor sit amet  adipisicing elit.
+                    </div>
+                    <div class="dropText none">
+                        <p class="textStatic">Laboriosam quas, aut consectetur animi autem aliquid consequuntur suscipit exercitationem laborum cupiditate magnam eaque quae delenit</p>
+                    </div>
+                </div>
+                <div class="dropItem dropItemLine">
+                    <div class="dropTitle textBold">
+                        Lorem ipsum, dolor sit amet  adipisicing elit.
+                    </div>
+                    <div class="dropText none">
+                        <p class="textStatic">Laboriosam quas, aut consectetur animi autem aliquid consequuntur suscipit exercitationem laborum cupiditate magnam eaque quae delenit</p>
+                    </div>
+                </div>
+                <div class="dropItem dropItemLine">
+                    <div class="dropTitle textBold">
+                        Lorem ipsum, dolor sit amet  adipisicing elit.
+                    </div>
+                    <div class="dropText none">
+                        <p class="textStatic">Laboriosam quas, aut consectetur animi autem aliquid consequuntur suscipit exercitationem laborum cupiditate magnam eaque quae delenit</p>
+                    </div>
+                </div>
+                <div class="dropItem">
+                    <div class="dropTitle textBold">
+                        Lorem ipsum, dolor sit amet  adipisicing elit.
+                    </div>
+                    <div class="dropText none">
+                        <p class="textStatic">Laboriosam quas, aut consectetur animi autem aliquid consequuntur suscipit exercitationem laborum cupiditate magnam eaque quae delenit</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    
+    <div class="third">
+        <div class="container">
+            <div class="thirdMainBlockTitle">
+                <h3 class="heading greenLine">Lorem ipsum, dolor sit amet consectetur elit.</h3>
+            </div>
+            <div class="quoteBlock">
+                <div class="quoteText">
+                    <p class="text"> 
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quas, aut consectetur
+                        animi  autem aliquid consequuntur suscipit exercitationem laborum cupiditate magnam eaque quae deleniti, iste nisi
+                        expedita, provident excepturi officia!
+                        Porro ab rerum omnis magnam eligendi error nobis dolore? Porro ab rerum omnis magnam eligendi error nobis dolore? Porro ab rerum omnis magnam eligendi error nobis dolore?
+                        <p class="textBold author">Jane Doe</p>
+                    </p>
+                </div>
+            </div>
+            <div class="review">
+                <div class="reviewFirst">
+                    <img class='imgAuthor reviewFirstImg' src="img/author.png" alt="фото_Автора">
+                    <div class="reviewTextFirst">
+                        <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quas, aut consectetur animi  autem aliquid
+                            <p class="textBold author">Jane Doe</p>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="reviewSecond">
+                    <div class="reviewTextSecond">
+                        <p class="text ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quas, aut consectetur animi  autem aliquid 
+                            <p class="textBold author">Jane Doe</p>
+                        </p>
+                    </div>
+                    <img class='imgAuthor reviewSecondImg' src="img/author.png" alt="фото_Автора">
+                </div>
+            </div>
         </div>
     </div>
 
@@ -73,4 +175,3 @@
 </body>
 </html> 
 
-</div>
